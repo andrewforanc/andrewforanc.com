@@ -225,12 +225,8 @@
 
   <footer class="bg-ink py-10 text-paper/70">
     <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-5 text-center text-sm sm:px-8 md:flex-row md:text-left">
-      <div>
-        <p class="font-display text-xl font-semibold text-paper">Andrew Pendleton for ANC 5F05</p>
-        <p class="mt-1">Eckington, Washington, DC</p>
-      </div>
-      <p>Built for neighbors, with care. <span class="mx-2 text-[#dc8b82]" aria-hidden="true">★ ★ ★</span></p>
-      <p>© <span id="year"></span> Andrew Pendleton</p>
+      <p>Paid for by Andrew Pendleton, 1928 3rd St. NE Apt 1, Washington, DC, 20002</p>
+      <a class="focus-ring rounded-sm font-semibold text-paper underline decoration-[#dc8b82] decoration-2 underline-offset-4 transition-colors hover:text-[#dc8b82]" href="mailto:andrew@andrewforanc.com">Email Andrew</a>
     </div>
   </footer>
 
@@ -249,8 +245,6 @@
       menuButton.setAttribute('aria-expanded', 'false');
       menuButton.setAttribute('aria-label', 'Open menu');
     }));
-
-    document.getElementById('year').textContent = new Date().getFullYear();
 
     document.getElementById('signup-form').addEventListener('submit', async (event) => {
       event.preventDefault();
